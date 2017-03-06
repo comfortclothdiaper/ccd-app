@@ -8,7 +8,7 @@
 			'contactNum': $scope.contactNumber,
 			'message': $scope.message			
 		};	
-		$http.post("http://localhost:8000/api/saveRetailerDetails" , saveDetail).success(function (response) {		
+		$http.post("https://powerful-badlands-14040.herokuapp.com:8000/api/saveRetailerDetails" , saveDetail).success(function (response) {		
 			if (response.status===201) { 
 				$scope.toastMessage = "Details successfully saved,We will get back to you soon.";
 				angular.element('#successMsg').stop().slideDown(1000).delay(1500).fadeOut(1000);					
