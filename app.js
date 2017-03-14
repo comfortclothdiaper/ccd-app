@@ -12,7 +12,7 @@ var app = express();
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 // mongoose.connect('mongodb://asmazabin:imdbest88@ds041566.mlab.com:41566/myccd');
-mongoose.connect('mongodb://comfortclothdiaper:allah!$gr8@ds058369.mlab.com:58369/myccd');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://comfortclothdiaper:allah!$gr8@ds058369.mlab.com:58369/myccd');
 // mongoose.connect('mongodb://localhost/CCD');
 // view engine setup
 // app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
