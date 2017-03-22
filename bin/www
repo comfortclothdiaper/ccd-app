@@ -18,11 +18,11 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
-var server = http.createServer(function(request, response) {
+var server = http.createServer(function (request, response) {
   var filePath = false;
 
   if (request.url == '/') {
-    filePath = "views/index.html";
+    filePath = "../index.html";
   } else {
     filePath = "views" + request.url;
   }
